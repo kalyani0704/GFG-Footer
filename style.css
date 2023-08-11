@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+body {
+    background: #111111;
+    color: white;
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 20px 0;
+}
+
+.contact-info {
+    max-width: 300px;
+    margin: 10px;
+}
+
+.contact-info>* {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.text {
+    display: flex;
+    flex-flow: row;
+    align-items: flex-start;
+}
+
+.text i {
+    position: relative;
+    top: 2px;
+    color: #2F8D46;
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+.text p {
+    font-size: 15px;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icons i {
+    padding: 7px;
+    font-size: 20px;
+    margin-right: 15px;
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background: #272727;
+    color: rgb(205, 178, 178);
+    transition: .5s;
+}
+
+.bxl-facebook:hover {
+    background: blueviolet;
+    color: white;
+}
+
+.bxl-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    color: white;
+}
+
+.bxl-linkedin:hover {
+    background: purple;
+    color: white;
+}
+
+.bxl-twitter:hover {
+    background: #1DA1F2;
+    color: white;
+}
+
+.bxl-youtube:hover {
+    background: red;
+    color: white;
+}
+
+.course-links {
+    max-width: 100%;
+}
+
+.main-con-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.course-links .links {
+    width: 15%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.links p {
+    font-size: 16px;
+    color: #2F8D46;
+    font-weight: bold;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+.links a {
+    font-size: 14px;
+    margin: 7px 0;
+    color: #f1f1f1f1;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.links a:hover {
+    color: #2F8D46;
+}
+
+
+/* Mobile Devices */
+
+
+@media screen and (max-width:750px) {
+
+    .main-container {
+        flex-flow: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .logo,
+    .platform,
+    .main-text,
+    .text p {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .text i {
+        display: none;
+    }
+
+    .icons,
+    .icons i {
+        justify-content: center;
+        margin: 10px;
+    }
+
+    .main-con-links {
+        flex-flow: column;
+    }
+
+    .course-links .links {
+        width: 100%;
+        align-items: center;
+        margin: 20px 0;
+    }
+}
+
+/* Tablet Devices 800 > */
+
+
+@media (min-width:751px) and (max-width:800px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .main-con-links {
+        flex-flow: row wrap;
+    }
+
+    .course-links .links {
+        width: 45%;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo,
+    .platform,
+    .main-text,
+    .text p {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .text i {
+        display: none;
+    }
+
+    .icons,
+    .icons i {
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+/* Tablet Devices 800 <  */
+
+@media (min-width:801px) and (max-width:1100px) {
+    .main-container {
+        flex-flow: column;
+        margin: 20px;
+    }
+
+    .contact-info {
+        max-width: 100%;
+        margin: 20px;
+    }
+
+    .logo,
+    .platform,
+    .main-text,
+    .text p {
+        text-align: center;
+        display: block;
+        margin: 10px auto;
+        justify-content: center;
+    }
+
+    .text i {
+        display: none;
+    }
+
+    .icons,
+    .icons i {
+        justify-content: center;
+        margin: 10px;
+    }
+}
